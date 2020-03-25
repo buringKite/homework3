@@ -4,7 +4,7 @@ const generatePassword = document.getElementById("password");
 let enterPasswordLength = prompt(
   "how many charcters would you like your password to be must by 8 to 128 charcter long "
 );
-
+alert("let's create a randomized pasword:");
 function number(x) {
   return x >= 8 && x <= 128
     ? +x
@@ -16,7 +16,7 @@ function getRandomCharacter(array) {
   let x = String.fromCharCode.apply(null, array);
   return x;
 }
-    
+
 function charCodeValues(x, y) {
   const array = [];
   for (let i = x; i <= y; i++) {
