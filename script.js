@@ -31,9 +31,9 @@ function writePassword() {
     );
   }
 
-  let numberOptions = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-  let specialOption = ["!", "@", "#", "$", "%", "&", "^", "&", "*"];
-  let lowerOptions = [
+  const numberOptions = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  const specialOption = ["!", "@", "#", "$", "%", "&", "^", "&", "*"];
+  const lowerOptions = [
     "a",
     "b",
     "c",
@@ -61,7 +61,7 @@ function writePassword() {
     "y",
     "z",
   ];
-  let upperOptions = [
+  const upperOptions = [
     "A",
     "B",
     "C",
