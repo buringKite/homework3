@@ -92,28 +92,28 @@ function writePassword() {
 
   let pool = [];
   if (number === true) {
-    for (let i = 0; i < numberOptions.length; i++) {
+    for (i = 0; i < numberOptions.length; i++) {
       pool.push(numberOptions[i]);
     }
   }
   if (special === true) {
-    for (let i = 0; i < specialOption.length; i++) {
+    for (i = 0; i < specialOption.length; i++) {
       pool.push(specialOption[i]);
     }
   }
   if (lower === true) {
-    for (let i = 0; i < lowerOptions.length; i++) {
+    for (i = 0; i < lowerOptions.length; i++) {
       pool.push(lowerOptions[i]);
     }
   }
   if (upper === true) {
-    for (let i = 0; i < upperOptions.length; i++) {
+    for (i = 0; i < upperOptions.length; i++) {
       pool.push(upperOptions[i]);
     }
   }
 
   let currentPassword = "";
-  for (let i = 0; i < passWordLength; i++) {
+  for (i = 0; i < passWordLength; i++) {
     let randomCharPosition = Math.floor(Math.random() * pool.length);
     currentPassword += pool[randomCharPosition];
     console.log(currentPassword);
