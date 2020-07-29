@@ -8,7 +8,7 @@ function writePassword() {
 }
 
 function writePassword() {
-  var passWordLength = prompt(
+  let passWordLength = prompt(
     "How many characters would you like your password to Contain?"
   );
   if (passWordLength < 8) {
